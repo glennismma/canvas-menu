@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -10,7 +11,7 @@ body {
 
 #info {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #menuCanvas {
@@ -18,4 +19,3 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-

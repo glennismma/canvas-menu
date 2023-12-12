@@ -12,14 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function drawMenu() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        ctx.fillStyle = '#333';
+        ctx.fillStyle = '#007bff'; // Цвет кнопок
         ctx.font = '24px Arial';
 
         menuItems.forEach(item => {
             ctx.fillRect(item.x - 10, item.y - 30, ctx.measureText(item.label).width + 20, 40);
             ctx.fillStyle = '#fff';
-            ctx.fillText(item.label, item.x, item.y);
-            ctx.fillStyle = '#333';
+            ctx.fillText(item.label, item.x, item.y + 5);
+            ctx.fillStyle = '#007bff';
         });
     }
 
